@@ -3,4 +3,6 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="wifi_dialog_title">No connection available</string>
+    <string name="wifi_dialog_body">Would you like enter your WIFI settings to connect to the Promess USB WIFI network to continue?</string>
 </resources>

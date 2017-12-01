@@ -12,6 +12,7 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/backgroundl"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <android.support.design.widget.AppBarLayout
@@ -27,7 +28,10 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:subtitleTextColor="#222"
+            app:title="Concierge"
+            app:titleTextColor="#222">
 
         </android.support.v7.widget.Toolbar>
 
@@ -35,9 +39,20 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:tabIndicatorHeight="5dp"
+            app:tabSelectedTextColor="#222"
             app:tabTextColor="#222" />
 
     </android.support.design.widget.AppBarLayout>
 
+    <!-- Middle section (body) -->
+    <RelativeLayout
+        android:id="@+id/relLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_center_viewpager" />
+
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
